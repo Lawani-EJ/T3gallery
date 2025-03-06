@@ -1,7 +1,7 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import React from 'react'
 
-const topnav = () => {
+const Topnav = () => {
   return (
     <div>
           <nav className="flex w-full items-center justify-between border-b p-4 text-xl font-semibold">
@@ -20,4 +20,4 @@ const topnav = () => {
   )
 }
 
-export default topnav
+export default Topnav
