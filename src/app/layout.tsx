@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { topnav } from "./_components/topnav";
+import Topnav from "./_components/topnav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,7 +24,7 @@ export default function RootLayout({
     <ClerkProvider>
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className={`font-sans ${inter.variable} flex flex-col gap-4`}>
-        <topnav />
+        <Topnav />
         {children}
       </body>
     </html>
