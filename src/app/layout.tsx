@@ -1,9 +1,11 @@
 import "~/styles/globals.css";
+import "@uploadthing/react/styles.css";
 import { Inter } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import Topnav from "./_components/topnav";
+
 
 const inter = Inter({
   subsets: ["latin"],
